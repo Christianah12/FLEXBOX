@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    *{
+        margin: 0;
+        box-sizing: border-box;
+        padding: 0;
+    }
+    body{
+        font-family: Arial, Helvetica, sans-serif;
+        line-height: 1.6;
+        padding: 10px;
+        
+    }
+    .header{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 15px 0;
+        border-bottom: 2px Solid bisque;
+        background-color: #333;
+        color: white;
+
+    }
+    .header ul{
+        list-style: none;
+        display: flex;
+    }
+   .header ul li{
+    margin: 0 15px;
+   }
+   .header ul li a{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+   }
+  .logo{
+    font-weight: bold;
+    font-size: 2em;
+  }
+  .hero{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 10px ;
+    background-color: #a57575;
+  }
+  .hero-text{
+    max-width: 50%;
+  }
+  .hero-text h1{
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+  }
+  .hero-text p{
+   font-size: 1.2rem;
+   margin-bottom: 20px;
+  }
+   .hero-text button{
+    padding: 10px 20px;
+    border: none;
+    background-color: blanchedalmond;
+    border-radius: 5px;
+  }
+.hero-image img{
+  max-width: 100px;
+  height: auto;
+  border-radius: 10px;
+}
+/* Tablet */
+@media(nax-width:768px;){
+  .hero{
+    flex-direction: column;
+    text-align: center;
+
+  }
+  .hero-text, .hero-image{
+    max-width: 100%;
+    margin-bottom:20% ;
+  }
+
+  
+}
+header ul{
+  flex-direction: column;
+}
+/* Mobile */
+@media(max-width:480px){
+  .header ul{
+    flex-direction: column;
+    margin-top: 20px;
+  }
+  .hero-text h1{
+    font-size: 2rex;
+  }
+}
+  
+
+</style>
+<body>
+<div class="header">
+<div class="logo">MySite.</div>
+<div class="nav">
+   <ul>
+    <li><a href="#Home">Home</a></li>
+    <li><a href="#About">About</a></li>
+    <li><a href="#Service">Service</a></li>
+    <li><a href="#Contact">Contact</a></li>
+   </ul>
+</div>
+</div>
+<div class="hero">
+    <div class="hero-text">
+        <h1>Welcome to MySite</h1>
+        <p>We build a great responsive websites that looks great on any device.</p>
+        <button>Get Started</button>
+    </div>
+    <div class="hero-image">
+        <img src="../img/profile.png" alt="">
+    </div>
+</div>
+</body>
+</html>
