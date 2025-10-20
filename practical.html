@@ -3,78 +3,216 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Product Card</title>
+  <title>Pricing Table</title>
   <style>
-    body {
-      font-family: Arial, sans-serif;
-      background: #f8f8f8;
+    @media(max-width:900px) {
+      .container{
+       flex-direction: row; 
+       
+      }
+      
+    }
+    .container{
       display: flex;
       justify-content: center;
       align-items: center;
-      height: 100vh;
+      gap: 20px;
+      background-color: rgb(231, 229, 229);
+      
     }
-
-    .product-card {
-      width: 220px;
-      background: #fff;
-      border-radius: 10px;
-      box-shadow: 0 2px 6px rgba(0,0,0,0.15);
-      overflow: hidden;
+    .item{
+      flex-basis: 300px;
+      height: 80vh;
+      border: 2px solid rgb(0, 0, 0, 0.3);
+      box-shadow: rgb(0, 0, 0, 0.2);
+     
+      
+    }
+    .item h2{
+      color: white;
+      background: orange;
       text-align: center;
-      padding: 15px;
+       max-width: 300px;
+      margin: 0 auto;
+      padding: 10px;
+
+      
     }
 
-    .product-card img {
-      width: 100%;
-      height: auto;
-      border-radius: 8px;
-    }
-
-    .product-name {
-      font-size: 16px;
-      font-weight: bold;
-      margin: 10px 0 5px;
-      color: #333;
-    }
-
-    .product-price {
-      font-size: 18px;
-      font-weight: bold;
-      color: #222;
-      margin: 5px 0;
-    }
-
-    .currency {
-      font-size: 14px;
-      color: #444;
-      margin-right: 3px;
-    }
-
-    .quantity {
-      margin-top: 10px;
-    }
-
-    .quantity input {
-      width: 60px;
-      padding: 5px;
+      .plan-button1{
       text-align: center;
-      font-size: 14px;
-      border: 1px solid #ccc;
-      border-radius: 5px;
+      background-color: orange;
+      color: white;
+      border: none;
+      height: 30px;
+      border-radius: 30px;
+      width: 100px;
+      margin-left:30%;
+      line-height: 20px;
+      margin-top: 20px;
+
+
+     }
+
+
+
+
+
+
+    .item1{
+      flex-basis: 300px;
+      height: 80vh;
+      border: 2px solid rgb(0, 0, 0, 0.3);
+      box-shadow: rgb(0, 0, 0, 0.2);
     }
+
+
+    .item1 h2{
+      color: white;
+      background-color: rgb(102, 9, 102);
+       max-width: 300px;
+      margin: 0 auto;
+      padding: 10px;
+      text-align: center;
+    }
+
+
+     .plan-button2{
+       text-align: center;
+      background-color:rgb(102, 9, 102);;
+      color: white;
+      border: none;
+      height: 30px;
+      border-radius: 30px;
+      width: 100px;
+      margin-left:30%;
+      line-height: 20px;
+      margin-top: 20px;
+
+
+     }
+     
+
+
+    .item2{
+      margin: 30px;
+       flex-basis: 300px;
+       height: 80vh;
+      border: 2px solid rgb(0, 0, 0, 0.3);
+      box-shadow: rgb(0, 0, 0, 0.2);
+    }
+
+    .item2 h2{
+      color: white;
+      background-color: rgb(27, 45, 146);
+      text-align: center;
+       max-width: 300px;
+      margin: 0 auto;
+      padding: 10px;
+
+     
+    }
+
+    .plan-button3{
+       text-align: center;
+       background-color: rgb(27, 45, 146);
+      color: white;
+      border: none;
+      height: 30px;
+      border-radius: 30px;
+      width: 100px;
+      margin-left:30%;
+      line-height: 20px;
+      margin-top: 20px;
+
+     }
+    h3{
+      text-align: center;
+      font-size: 2rem;
+      font-weight: 200;
+      line-height: 0;
+    }
+    strong{
+      font-size: 20px;
+      font-weight: 200;
+    }
+    p{
+      text-align: center;
+     
+    }
+    /* p span{
+     background-color: red;
+    }
+     */
+ 
+    
+     
+
   </style>
 </head>
 <body>
+  <div class="container">
+    <div class="item">
+      <h2>Crown</h2>
+      <h3>$15 <strong>/month</strong></h3>
+      <hr style="height: 2px; width: 90%;">
+      <p>✔️Cras justo odio</p>
+      <hr style="height: 2px; width: 90%;">
+      <p>✔️Dapibus ac facilisis in</p>
+       <hr style="height: 2px; width: 90%;">
+       <p>✔️Mobi leo risus</p>
+        <hr style="height: 2px; width: 90%;">
+        <p>✔️ac facilisis in</p>
+       <hr style="height: 2px; width: 90%;">
+       <p><span>❌Porta ac consectetur ac</span></p>
+       <hr style="height: 2px; width: 90%;">
+       <p> <span>❌ ac faciliasis in</span></p>
+       <hr style="height: 2px; width: 90%;">
+       <p><span>❌Vestibulum at eros</span></p>
+       <hr style="height: 2px; width: 90%;">
+       <button class="plan-button1">UPGRADE</button>
+       </div>
 
-  <div class="product-card">
-    <img src="product.jpg" alt="Danami Button Design Shirt">
-    <div class="product-name">Danami Button Design Shirt</div>
-    <div class="product-price"><span class="currency">₦</span>9,900</div>
-    <div class="quantity">
-      <label for="qty">Qty:</label>
-      <input type="number" id="qty" name="qty" value="1" min="1">
+    <div class="item1">
+      <h2>Ace</h2>
+      <h3>$45 <strong>/month</strong></h3>
+      <hr style="height: 2px; width: 90%;">
+      <p>✔️Cras justo odio</p>
+      <hr style="height: 2px; width: 90%;">
+      <p>✔️Dapibus ac facilisis in</p>
+       <hr style="height: 2px; width: 90%;">
+       <p>✔️ac faciliasis in</p>
+       <hr style="height: 2px; width: 90%;">
+       <p>✔️Mobi leo risus</p>
+       <hr style="height: 2px; width: 90%;">
+       <p><span>❌Porta ac consectetur ac</span></p>
+       <hr style="height: 2px; width: 90%;">
+       <p> <span>❌ ac faciliasis in</span></p>
+       <hr style="height: 2px; width: 90%;">
+       <p><span>❌ Vestibulum at eros</span></p>
+       <hr style="height: 2px; width: 90%;">
+       <button class="plan-button2">UPGRADE</button>
+    </div>
+    <div class="item2">
+      <h2>Conquer</h2>
+      <h3>$99 <strong>/month</strong></h3>
+      <hr style="height: 2px; width: 90%;">
+      <p>✔️Cras justo odio</p>
+      <hr style="height: 2px; width: 90%;">
+      <p>✔️Dapibus ac facilisis in</p>
+       <hr style="height: 2px; width: 90%;">
+       <p>✔️ac facilisis in</p>
+       <hr style="height: 2px; width: 90%;">
+       <p>✔️Mobi leo risus</p>
+       <hr style="height: 2px; width: 90%;">
+       <p><span>✔️Porta ac consectetur ac</span></p>
+       <hr style="height: 2px; width: 90%;">
+       <p> <span> ✔️ac faciliasis in</span></p>
+       <hr style="height: 2px; width: 90%;">
+       <p><span>✔️Vestibulum at eros</span></p>
+       <hr style="height: 2px; width: 90%;">
+       <button class="plan-button3">UPGRADE</button>
     </div>
   </div>
-
 </body>
 </html>
